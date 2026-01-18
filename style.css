@@ -23,8 +23,7 @@ body::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2); 
+  height: 100%; 
   z-index: -1;
 }
 
@@ -69,15 +68,16 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
-background: linear-gradient(135deg, #2a1b2f, #3a2042);
+  background: linear-gradient(135deg, #b9839c, #e2b8c6);
   padding: 15px 40px;
   border-radius: 25px;
-  color: #fff;
+  color: #2a1b2f;
   text-decoration: none;
   font-size: 1rem;
-  transition: background 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+   border: 1px solid rgba(255,255,255,0.6);
+ 
 }
 
 .link-card .social.logos {
@@ -97,22 +97,24 @@ background: linear-gradient(135deg, #2a1b2f, #3a2042);
 }
 
 .link-card:hover {
-  transform: scale(1.025);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #c98aa0, #e3b3c2);
-  color: #2a1b2f;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease;
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #e9c7d2, #f6dfe7);
+  color: #5b2b6f;
+    filter: brightness(1.05);
+
 }
 
 .link-card:hover .social.logos  {
   opacity: 1; 
   color: #fff;
+  filter: invert(100%);
 }
 
 .link-card:hover .social.logos-2  {
   opacity: 1; 
   color: #fff;
+  filter: invert(100%);
 }
 
 .social-buttons {
@@ -125,9 +127,12 @@ background: linear-gradient(135deg, #2a1b2f, #3a2042);
 .footer-icon img {
   transition: transform 0.2s;
   opacity: 0.5;
+  
 }
 
 .footer-icon:hover img {
   transform: scale(1.1);
   opacity: 1;
+  filter: invert(100%);
+  
 }
