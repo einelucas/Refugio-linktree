@@ -11,7 +11,7 @@ body {
     360deg, #5b2b6f, #8a3e8c, #b65d93
   );
   color: #fff;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
