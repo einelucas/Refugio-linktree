@@ -69,7 +69,7 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1a1a1a;
+background: linear-gradient(135deg, #2a1b2f, #3a2042);
   padding: 15px 40px;
   border-radius: 25px;
   color: #fff;
@@ -77,7 +77,7 @@ body::after {
   font-size: 1rem;
   transition: background 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: #fff 0px solid;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .link-card .social.logos {
@@ -99,7 +99,8 @@ body::after {
 .link-card:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: #686161;
+  background: linear-gradient(135deg, #c98aa0, #e3b3c2);
+  color: #2a1b2f;
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
 }
